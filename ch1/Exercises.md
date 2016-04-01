@@ -40,3 +40,11 @@ See `ex1.3.scm`.
 **Exercise 1.4**
 
 If `b > 0`, we calculate `a + b`. Otherwise, we calculate `a - b`. Since `abs b = -b`, this works out fine.
+
+**Exercise 1.5**
+
+If we use applicative-order evaluation, the interpreter keeps expanding `(p)` indefinitely. In normal-order evaluation, the `if` condition evaluates to `true` and it is returned.
+
+**Exercise 1.6**
+
+Scheme uses applicative-order evaluation. This means that the call to `(sqrt-iter)` keeps getting indefinitely expanded and called, thus going into an infinite loop. Hence, this program will never terminate.
