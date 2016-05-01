@@ -1,5 +1,4 @@
-Exercises
----------
+## Exercises ##
 
 **Exercise 1.1**
 
@@ -52,3 +51,59 @@ Scheme uses applicative-order evaluation. This means that the call to `(sqrt-ite
 **Exercise 1.7**
 
 The precision takes a big hit when numbers become very small. For example, `(sqrt 0.0001)` gives a result, `0.03230844833048122`, while the expected result is `0.01`. This is a huge difference. Moreover, `(sqrt 10000000000000)` inexplicably goes into an infinite loop (while higher powers don't - which is strange).
+
+**Exercise 1.8**
+
+See `ex1.8.scm`.
+
+**Exercise 1.9**
+
+Using the procedure:
+
+```
+(define (+ a b)
+    (if (= a 0)
+        b
+        (inc (+ (dec a) b))))
+```
+
+```
+(+ 4 5)
+(inc (+ (dec 4) 5))
+(inc (+ 3 5))
+(inc (inc (+ (dec 3) 5)))
+(inc (inc (+ 2 5)))
+(inc (inc (inc (+ (dec 2) 5))))
+(inc (inc (inc (+ 1 5))))
+(inc (inc (inc (inc (+ (dec 1) 5)))))
+(inc (inc (inc (inc (+ 0 5)))))
+(inc (inc (inc (inc 5))))
+(inc (inc (inc 6)))
+(inc (inc 7))
+(inc 8)
+9
+```
+
+Using the procedure:
+
+```
+(define (+ a b)
+    (if (= a 0)
+        b
+        (+ (dec a) (inc b))))
+```
+
+```
+(+ 4 5)
+(+ (dec 4) (inc 5))
+(+ 3 6)
+(+ (dec 3) (inc 6))
+(+ 2 7)
+(+ (dec 2) (inc 7))
+(+ 1 8)
+(+ (dec 1) (inc 8))
+(+ 0 9)
+9
+```
+
+The first procedure is recursive in nature, while the second one is iterative.
