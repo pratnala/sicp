@@ -107,3 +107,17 @@ Using the procedure:
 ```
 
 The first procedure is recursive in nature, while the second one is iterative.
+
+**Exercise 1.10**
+
+Values of:
+
+- `(A 1 10)` : 1024
+- `(A 2 4)` : 65536
+- `(A 3 3)` : 65536
+
+Concise mathematical definitions for:
+
+- `(f n)` : `2 * n`
+- `(g n)` : `2 ^ n`
+- `(h n)` : `2 ^ 2 ^ ... n times`
