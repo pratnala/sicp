@@ -121,3 +121,11 @@ Concise mathematical definitions for:
 - `(f n)` : `2 * n`
 - `(g n)` : `2 ^ n`
 - `(h n)` : `2 ^ 2 ^ ... n times`
+
+**Exercise 1.11**
+
+See `ex1.11.scm`.
+
+**Exercise 1.12**
+
+See `ex1.12.scm`. Rows and columns are 1-indexed from the left in the typical Pascal's triangle.
