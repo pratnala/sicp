@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.82]{geometry}
+\usepackage{parskip}
+
+\begin{document}
+	We need to prove by induction that
+	
+	\[
+	\text{Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt{5}}
+	\]
+	
+	where:
+	
+	\[
+	\begin{split}
+	\phi&=\frac{1+\sqrt{5}}{2}\\	
+	\psi&=\frac{1-\sqrt{5}}{2}
+	\end{split}
+	\]
+	
+	We observe that $\phi$ and $\psi$ are the roots of the equation: 
+	
+	\[x^2-x-1=0\]
+	
+	A key simplification arising out of this equation by re-arranging the terms is $x=1+\frac{1}{x}$. Since $\phi$ and $\psi$ are roots, it follows that:
+	
+	\[
+	\begin{split}
+	\phi&=1+\frac{1}{\phi}\\	
+	\psi&=1+\frac{1}{\psi}
+	\end{split}
+	\]
+	
+	Step 1 of mathematical induction is validating the base cases. We will do so for Fib(0), Fib(1) and Fib(2).
+	
+	\textbf{LHS:}
+	
+	\[\text{Fib}(0)=0\]
+	\[\text{Fib}(1)=1\]
+	\[\text{Fib}(2)=1\]
+	
+	\textbf{RHS:}
+	
+	\[\frac{\phi^0-\psi^0}{\sqrt{5}}=0\]
+	\[\frac{\phi^1-\psi^1}{\sqrt{5}}=\frac{\frac{1+\sqrt{5}}{2}-\frac{1-\sqrt{5}}{2}}{\sqrt{5}}=\frac{2\sqrt{5}}{2\sqrt{5}}=1\]
+	\[\frac{\phi^2-\psi^2}{\sqrt{5}}=\frac{\left(\frac{1+\sqrt{5}}{2}\right)^2-\left(\frac{1-\sqrt{5}}{2}\right)^2}{\sqrt{5}}=\frac{4\sqrt{5}}{4\sqrt{5}}=1\]
+	
+	The base cases verify correctly. Now, we move on to the inductive step. We assume it is true for $n=k$ and $n=k-1$ i.e. the following are true:
+	
+	\[
+	\begin{split}
+	\text{Fib}(k)&=\frac{\phi^k-\psi^k}{\sqrt{5}}\\
+	\text{Fib}(k-1)&=\frac{\phi^{k-1}-\psi^{k-1}}{\sqrt{5}}
+	\end{split}
+	\]
+	
+	Now, we need to prove that the statement for $n=k+1$ i.e. the following is true:
+	
+	\[\text{Fib}(k+1)=\frac{\phi^{k+1}-\psi^{k+1}}{\sqrt{5}}\]
+	
+	\[
+	\begin{split}
+	\text{Fib}(k+1)&=\text{Fib}(k)+\text{Fib}(k-1)\\
+	&=\frac{\phi^k-\psi^k}{\sqrt{5}}+\frac{\phi^{k-1}-\psi^{k-1}}{\sqrt{5}}\\
+	&=\frac{\phi^k+\phi^{k-1}-(\psi^k+\psi^{k-1})}{\sqrt{5}}\\
+	&=\frac{\phi^k\left(1+\frac{1}{\phi}\right)-\left(\psi^k\left(1+\frac{1}{\psi}\right)\right)}{\sqrt{5}}\\
+	&=\frac{\phi^k\phi-\psi^k\psi}{\sqrt{5}}\\
+	\text{Fib}(k+1)&=\frac{\phi^{k+1}-\psi^{k+1}}{\sqrt{5}}
+	\end{split}
+	\]
+	
+	This has been proved. We also need to show the other part which says that $\text{Fib}(n)$ is the closest integer to $\frac{\phi^n}{\sqrt{5}}$. This is essentially equivalent to showing that the difference between the two is less than 0.5. From our previous proof, we can rearrange to obtain the following:
+	
+	\[\frac{\phi^n}{\sqrt{5}}-\text{Fib}(n)=\frac{\psi^n}{\sqrt{5}}\implies\frac{\psi^n}{\sqrt{5}}<\frac{1}{2}\implies\psi^n<\frac{\sqrt{5}}{2}\]
+	
+	Now, $\psi=\frac{1-\sqrt{5}}{2}=-0.618$. This gives us $|\psi|<1\implies|\psi|^n<1$. The RHS of our inequality is greater than 1 and this completes the proof.
+\end{document}

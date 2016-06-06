@@ -129,3 +129,7 @@ See `ex1.11.scm`.
 **Exercise 1.12**
 
 See `ex1.12.scm`. Rows and columns are 1-indexed from the left in the typical Pascal's triangle.
+
+**Exercise 1.13**
+
+See `ex1.13.pdf` for the proof. Corresponding
