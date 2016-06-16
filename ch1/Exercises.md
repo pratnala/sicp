@@ -132,4 +132,8 @@ See `ex1.12.scm`. Rows and columns are 1-indexed from the left in the typical Pa
 
 **Exercise 1.13**
 
-See `ex1.13.pdf` for the proof. Corresponding
+See `ex1.13.pdf` for the proof. Corresponding TeX file also included.
+
+**Exercise 1.14**
+
+See `ex1.14.png` for the tree. Order of growth in number of steps is `O(2^n)` (at most 2 calls at each step for at least a decrement by 1) and space is `O(n)`.
