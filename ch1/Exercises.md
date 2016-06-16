@@ -137,3 +137,17 @@ See `ex1.13.pdf` for the proof. Corresponding TeX file also included.
 **Exercise 1.14**
 
 See `ex1.14.png` for the tree. Order of growth in number of steps is `O(2^n)` (at most 2 calls at each step for at least a decrement by 1) and space is `O(n)`.
+
+**Exercise 1.15**
+
+```
+(sine 12.15)
+(p (sine 4.05))
+(p (p (sine 1.35)))
+(p (p (p (sine 0.45))))
+(p (p (p (p (sine 0.15)))))
+(p (p (p (p (p (sine 0.05))))))
+```
+
+**a.** Procedure is applied 5 times.
+**b.** Space and number of steps is <code>O(log<sub>3</sub> n)</code>.
