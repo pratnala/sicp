@@ -151,3 +151,7 @@ See `ex1.14.png` for the tree. Order of growth in number of steps is `O(2^n)` (a
 
 **a.** Procedure is applied 5 times.
 **b.** Space and number of steps is <code>O(log<sub>3</sub> n)</code>.
+
+**Exercise 1.16**
+
+See `ex1.16.scm`.
