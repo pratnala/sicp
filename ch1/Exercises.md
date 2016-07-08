@@ -155,3 +155,11 @@ See `ex1.14.png` for the tree. Order of growth in number of steps is `O(2^n)` (a
 **Exercise 1.16**
 
 See `ex1.16.scm`.
+
+**Exercise 1.17**
+
+See `ex1.17.scm`.
+
+**Exercise 1.18**
+
+See `ex1.18.scm`.
