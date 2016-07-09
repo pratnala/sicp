@@ -163,3 +163,7 @@ See `ex1.17.scm`.
 **Exercise 1.18**
 
 See `ex1.18.scm`.
+
+**Exercise 1.19**
+
+See `ex1.19.pdf` for the derivation and `ex1.19.scm` for the completed program. Corresponding TeX file also included.

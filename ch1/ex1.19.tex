@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.82]{geometry}
+\usepackage{parskip}
+
+\title{SICP - Exercise 1.19}
+\author{Pratyush Nalam}
+\date{July 7, 2016}
+
+\begin{document}
+	\maketitle
+	
+	The original transformation, $T_{pq}$ is given as
+	
+	\[
+	T_{pq}(a,b)=
+	\begin{cases}
+	a\leftarrow a(p+q)+bq\\
+	b\leftarrow bp+aq
+	\end{cases}
+	\]
+	
+	The new transformation $T_{p^\prime q^\prime}$ is defined as $T_{pq}(T_{pq})(a,b)$ -- basically the transformation is applied twice. Substituting this in the expression for $T_{pq}$, we get the following:
+	
+	\[
+	T_{p^\prime q^\prime}(a,b)=
+	\begin{cases}
+	a\leftarrow (a(p+q)+bq)(p+q)+(bp+aq)q\\
+	b\leftarrow (bp+aq)p+(a(p+q)+bq)q
+	\end{cases}
+	\]
+	
+	We expand the expression and simplify it to the following
+	
+	\[
+	T_{p^\prime q^\prime}(a,b)=
+	\begin{cases}
+	a\leftarrow a(p^2+q^2+2pq+q^2)+b(2pq+q^2)\\
+	b\leftarrow b(p^2+q^2)+a(2pq+q^2)
+	\end{cases}
+	\]
+	
+	Clearly, this means that
+	
+	\[
+	p^\prime=p^2+q^2
+	\]
+	\[
+	q^\prime=2pq+q^2
+	\]
+	
+	This is the required solution and we use it to finish the given program.
+	
+\end{document}
