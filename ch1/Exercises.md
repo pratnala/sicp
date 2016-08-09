@@ -242,3 +242,13 @@ Total evaluations: 18
 ```
 
 Total evaluations: 4
+
+**Exercise 1.21**
+
+199: 199
+1999: 1999
+19999: 7
+
+**Exercise 1.22**
+
+The computer is too fast for the given ranges. But a factor of 3.15 to 3.2 is observed in higher ranges which is roughly the square root of 10.
