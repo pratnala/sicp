@@ -256,3 +256,7 @@ Code is written in `ex1.22.scm`. The computer is too fast for the given ranges. 
 **Exercise 1.23**
 
 Code is written in `ex1.23.scm`. Yes, halving the number of steps leads to a roughly 2x increase in speed.
+
+**Exercise 1.24**
+
+There are greater gains in performance for primes near 1,000,000 than primes near 1,000. This is because the squaring which occurs is more efficient with larger exponents.
