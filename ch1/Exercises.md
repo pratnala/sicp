@@ -251,4 +251,8 @@ Total evaluations: 4
 
 **Exercise 1.22**
 
-The computer is too fast for the given ranges. But a factor of 3.15 to 3.2 is observed in higher ranges which is roughly the square root of 10.
+Code is written in `ex1.22.scm`. The computer is too fast for the given ranges. But a factor of 3.15 to 3.2 is observed in higher ranges which is roughly the square root of 10.
+
+**Exercise 1.23**
+
+Code is written in `ex1.23.scm`. Yes, halving the number of steps leads to a roughly 2x increase in speed.
