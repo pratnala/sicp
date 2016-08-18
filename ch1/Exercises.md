@@ -264,3 +264,7 @@ There are greater gains in performance for primes near 1,000,000 than primes nea
 **Exercise 1.25**
 
 Technically, Alyssa's procedure is correct. However, it would slow down the process as one must first calculate the potentially large base<sup>exp</sup> number before taking the remainder. This would significantly slow down the fast prime tester. The original `expmod` function calculates the remainder after each exponentiation, thus keeping the numbers manageably small.
+
+**Exercise 1.26**
+
+In Louis's code, `expmod` is being calculated twice because of the `(* (expmod ...) (expmod ...))` pattern. When using the `(square x)` pattern, one calculates `x` first and then multiplies it with itself. Since it is being calculated twice, the running time becomes `2^x`. In this case, `x` is `log n`. Thus, the running time simplifies to `n`.
