@@ -268,3 +268,7 @@ Technically, Alyssa's procedure is correct. However, it would slow down the proc
 **Exercise 1.26**
 
 In Louis's code, `expmod` is being calculated twice because of the `(* (expmod ...) (expmod ...))` pattern. When using the `(square x)` pattern, one calculates `x` first and then multiplies it with itself. Since it is being calculated twice, the running time becomes `2^x`. In this case, `x` is `log n`. Thus, the running time simplifies to `n`.
+
+**Exercise 1.27**
+
+Code is written in `ex1.27.scm`. Yes, the given Carmichael numbers fool the Fermat test.
