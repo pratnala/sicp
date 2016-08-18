@@ -260,3 +260,7 @@ Code is written in `ex1.23.scm`. Yes, halving the number of steps leads to a rou
 **Exercise 1.24**
 
 There are greater gains in performance for primes near 1,000,000 than primes near 1,000. This is because the squaring which occurs is more efficient with larger exponents.
+
+**Exercise 1.25**
+
+Technically, Alyssa's procedure is correct. However, it would slow down the process as one must first calculate the potentially large base<sup>exp</sup> number before taking the remainder. This would significantly slow down the fast prime tester. The original `expmod` function calculates the remainder after each exponentiation, thus keeping the numbers manageably small.
