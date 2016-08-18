@@ -272,3 +272,24 @@ In Louis's code, `expmod` is being calculated twice because of the `(* (expmod .
 **Exercise 1.27**
 
 Code is written in `ex1.27.scm`. Yes, the given Carmichael numbers fool the Fermat test.
+
+**Exercise 1.28**
+
+Code is written in `ex1.28.scm`. Carmichael numbers cannot fool the Miller-Rabin test.
+
+**Exercise 1.29**
+
+Results:
+
+<pre>
+> (integral cube 0 1 0.01)
+0.24998750000000042
+> (integral cube 0 1 0.001)
+0.249999875000001
+> (simpson cube 0 1 100)
+0.25
+> (simpson cube 0 1 1000)
+0.25
+</pre>
+
+Simpson's rule performs better.
