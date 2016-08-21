@@ -301,3 +301,7 @@ Code is written in `ex1.30.scm`.
 **Exercise 1.31**
 
 Code is written in `ex1.31.scm`.
+
+**Exercise 1.32**
+
+Code is written in `ex1.32.scm`.
