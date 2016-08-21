@@ -283,13 +283,13 @@ Code is written in `ex1.29.scm`. Results:
 
 <pre>
 > (integral cube 0 1 0.01)
-> 0.24998750000000042
+0.24998750000000042
 > (integral cube 0 1 0.001)
-> 0.249999875000001
+0.249999875000001
 > (simpson cube 0 1 100)
-> 0.25
+0.25
 > (simpson cube 0 1 1000)
-> 0.25
+0.25
 </pre>
 
 Simpson's rule performs better.
@@ -297,3 +297,7 @@ Simpson's rule performs better.
 **Exercise 1.30**
 
 Code is written in `ex1.30.scm`.
+
+**Exercise 1.31**
+
+Code is written in `ex1.31.scm`.
