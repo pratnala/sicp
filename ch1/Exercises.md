@@ -309,3 +309,7 @@ Code is written in `ex1.32.scm`.
 **Exercise 1.33**
 
 Code is written in `ex1.33.scm`.
+
+**Exercise 1.34**
+
+`(f f)` evaluates to `(f 2)` which then evaluates to `(2 2)`. This is not a valid Scheme expression and hence, throws up an error.
