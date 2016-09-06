@@ -317,3 +317,7 @@ Code is written in `ex1.33.scm`.
 **Exercise 1.35**
 
 We are given `x = 1 + 1/x`. Multiplying by `x` on both sides and simplifying, we get `x^2-x-1=0` whose root is the golden ratio. Code is written in `ex1.35.scm`.
+
+**Exercise 1.36**
+
+Code is written in `ex1.36.scm`. Average damping takes fewer steps to converge. Initial guess of `2.0` has been used.
