@@ -313,3 +313,7 @@ Code is written in `ex1.33.scm`.
 **Exercise 1.34**
 
 `(f f)` evaluates to `(f 2)` which then evaluates to `(2 2)`. This is not a valid Scheme expression and hence, throws up an error.
+
+**Exercise 1.35**
+
+We are given `x = 1 + 1/x`. Multiplying by `x` on both sides and simplifying, we get `x^2-x-1=0` whose root is the golden ratio. Code is written in `ex1.35.scm`.
