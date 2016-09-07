@@ -321,3 +321,7 @@ We are given `x = 1 + 1/x`. Multiplying by `x` on both sides and simplifying, we
 **Exercise 1.36**
 
 Code is written in `ex1.36.scm`. Average damping takes fewer steps to converge. Initial guess of `2.0` has been used.
+
+**Exercise 1.37**
+
+`k = 11` gives an approximation that is accurate to 4 decimal places. Code is written in `ex1.37.scm`.
