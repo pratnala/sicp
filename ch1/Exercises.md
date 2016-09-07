@@ -336,3 +336,7 @@ return i - quotient(i / 3)
 else
 return 1
 </pre>
+
+**Exercise 1.39**
+
+Code is written in `ex1.39.scm`.
