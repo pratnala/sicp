@@ -325,3 +325,14 @@ Code is written in `ex1.36.scm`. Average damping takes fewer steps to converge. 
 **Exercise 1.37**
 
 `k = 11` gives an approximation that is accurate to 4 decimal places. Code is written in `ex1.37.scm`.
+
+**Exercise 1.38**
+
+Code is written in `ex1.38.scm`. To calculate the denominator for a particular `i`, the following procedure is used:
+
+<pre>
+if i = 2 mod 3
+return i - quotient(i / 3)
+else
+return 1
+</pre>
