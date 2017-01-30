@@ -344,3 +344,14 @@ Code is written in `ex1.39.scm`.
 **Exercise 1.40**
 
 Code is written in `ex1.40.scm`.
+
+**Exercise 1.41**
+
+Code is written in `ex1.41.scm`. In general, we can simplify `((double (double double)) proc)` as follows:
+
+<pre>
+(double double) = (lambda (x) (double (double x)))
+(double (double double)) = (lambda (x) ((double double) ((double double) x))) = (lambda (x) (double (double (double (double x)))))
+</pre>
+
+In the case of `inc`, this simplifies to adding `16` to `x`. So, we get the answer of `(((double (double double)) inc) 5)` as `21`.
