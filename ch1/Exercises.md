@@ -363,3 +363,7 @@ Code is written in `ex1.42.scm`.
 **Exercise 1.43**
 
 Code is written in `ex1.43.scm`.
+
+**Exercise 1.44**
+
+Code is written in `ex1.44.scm`.
