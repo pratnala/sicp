@@ -367,3 +367,7 @@ Code is written in `ex1.43.scm`.
 **Exercise 1.44**
 
 Code is written in `ex1.44.scm`.
+
+**Exercise 1.45**
+
+Code is written in `ex1.45.scm`. It can be observed that on average, `(log (n + 1) / log 2) - 1` average dampings need to be done to extract the `n`-th root.
