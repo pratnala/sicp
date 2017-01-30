@@ -340,3 +340,7 @@ return 1
 **Exercise 1.39**
 
 Code is written in `ex1.39.scm`.
+
+**Exercise 1.40**
+
+Code is written in `ex1.40.scm`.
