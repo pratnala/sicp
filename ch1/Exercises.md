@@ -355,3 +355,7 @@ Code is written in `ex1.41.scm`. In general, we can simplify `((double (double d
 </pre>
 
 In the case of `inc`, this simplifies to adding `16` to `x`. So, we get the answer of `(((double (double double)) inc) 5)` as `21`.
+
+**Exercise 1.42**
+
+Code is written in `ex1.42.scm`.
