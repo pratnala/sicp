@@ -359,3 +359,7 @@ In the case of `inc`, this simplifies to adding `16` to `x`. So, we get the answ
 **Exercise 1.42**
 
 Code is written in `ex1.42.scm`.
+
+**Exercise 1.43**
+
+Code is written in `ex1.43.scm`.
