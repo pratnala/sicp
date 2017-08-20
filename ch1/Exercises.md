@@ -1,4 +1,4 @@
-## Exercises ##
+## Exercises
 
 **Exercise 1.1**
 
@@ -281,7 +281,7 @@ Code is written in `ex1.28.scm`. Carmichael numbers cannot fool the Miller-Rabin
 
 Code is written in `ex1.29.scm`. Results:
 
-<pre>
+```
 > (integral cube 0 1 0.01)
 0.24998750000000042
 > (integral cube 0 1 0.001)
@@ -290,7 +290,7 @@ Code is written in `ex1.29.scm`. Results:
 0.25
 > (simpson cube 0 1 1000)
 0.25
-</pre>
+```
 
 Simpson's rule performs better.
 
